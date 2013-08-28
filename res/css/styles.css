@@ -1,0 +1,426 @@
+
+#btnAdd {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	
+}
+
+
+#appIcon {
+	position: absolute;
+	height: 45px;
+	top: 0;
+	left: 10px;
+}
+
+#btnNext {
+	position: absolute;
+	right: 85px;
+	font-size: 18px;
+	top: 12px;
+	height: 25px;
+	line-height: 25px;
+	z-index: 4;
+	
+}
+
+
+
+
+#navIcon {
+	right: 65px;
+	height: 35px;
+	position: absolute;
+	top: 7px;
+}
+
+*	 {
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	-moz-tap-highlight-color: rgba(255,255,255,0);
+	tap-highlight-color: rgba(255,255,255,0);
+}
+
+
+
+.homePage {
+	position: absolute;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 45px;
+	margin-bottom: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	top: 45px;
+	bottom: 45px;
+	background-color: #D6D6D6;
+	overflow: hidden;
+	left: 0;
+
+}
+
+#thelist {
+	list-style:none;
+	padding:0;
+	margin:0;
+	width:100%;
+	text-align:left;
+}
+
+#thelist li {
+	padding:0 10px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 15px;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	background-color:#fafafa;
+	font-size:14px;
+}
+
+.footerVis {
+	position:fixed; z-index:6;
+	bottom:0; left:0;
+	width:100%;
+	height:48px;
+	background-color:#222;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+	background-image:-moz-linear-gradient(top, #999, #666 2%, #222);
+	background-image:-o-linear-gradient(top, #999, #666 2%, #222);
+	padding:0;
+	border-top:1px solid #444;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.footerInv {
+	position:fixed; z-index:5;
+	bottom:0; 
+	left:100%;
+	width:100%;
+	height:48px;
+	background-color:#222;
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #999), color-stop(0.02, #666), color-stop(1, #222));
+	background-image:-moz-linear-gradient(top, #999, #666 2%, #222);
+	background-image:-o-linear-gradient(top, #999, #666 2%, #222);
+	padding:0;
+	border-top:1px solid #444;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+
+h2 {
+	font-size: 14px;
+	padding-left: 10px;
+	color: #0B2F56;
+}
+
+.listTitle {
+	font-weight: bold;
+}
+
+.detailPage {
+	z-index: 4;
+	position: absolute;
+	margin-left: 100%;
+	top: 45px;
+	bottom: 48px;
+	margin-bottom: 0px;
+	/*padding-left: 10px;*/
+	overflow: hidden;
+	width: 98%;
+	/*height: 100%;*/
+	background-color: white;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.detailPageVis{
+	z-index: 4;
+	position: absolute;
+	margin-left: 1%;
+	top: 45px;
+	
+	bottom: 48px;
+	margin-bottom: 0px;
+	/*padding-left: 10px;*/
+	width: 98%;
+	/*height: 100%;*/
+	overflow: hidden;
+	background-color: white;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+#detailScroll, #secondDetailScroll, #thirdDetailScroll {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 8px;
+	left: 8px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+#navList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navList li {
+	display: inline;
+	width: 33%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+#btnMensaList img, #btnMap img {
+	height: 45px;
+	
+}
+
+#btnOpenTime img {
+	height: 42px;
+	padding-top: 2px;
+}
+
+
+
+.settingsPage {
+	position: fixed;
+	z-index: 4;
+	background: #454545;
+	width: 50%;
+	height: 100%;
+	top: 45px;
+	bottom: 48px;
+	left: -50%;
+	font-size: 14px;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.settingsPageVis {
+	position: fixed;
+	z-index: 4;
+	background: #454545;
+	width: 50%;
+	height: 100%;
+	top: 45px;
+	bottom: 48px;
+	left: 0;
+	font-size: 14px;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	
+}
+
+#courseNavigation {
+	margin-top: 50%;
+	float: right;
+}
+
+.courseNavigationHideVis {
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 32px);
+	z-index: 5;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.courseNavigationHide {
+	position: absolute;
+	top: 50%;
+	left: -32px;
+	z-index: 5;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+#courseNavigationShow {
+	position: absolute;
+	top: 50%;
+	z-index: 4;
+}
+
+#detailContent, #secondDetailContent, #thirdDetailContent {
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+
+
+
+#formContent {
+	position: relative;
+	width: 90%;
+	height: 100%;
+	margin-left: 20px;
+	margin-right: 50px;
+	margin-top: 55px;
+	font-size: 16px;
+}
+
+.titleInput {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 20px;
+	width: 100%;
+}
+
+.feedbackInput {
+	width: 100%;
+	height: 100px;
+}
+
+.btnSubmit {
+	margin-top: 15px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: black;
+	border:2px solid;
+	border-radius: 10px;
+	border-color: #A5A5A5;
+	background-color: #A5A5A5;
+	text-align: center;
+
+}
+
+#thelist li {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+
+#thelist li a {
+	display: block;
+}
+
+.listItemTitle {
+	
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: underline;
+	line-height: 16px;
+	color: #424040;
+	
+}
+
+.listItemText {
+	
+	line-height: 16px;
+	width: 20px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.listItemContent {
+	height: 80px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+}
+
+.listItem {
+	display: block;
+}
+
+.btnVote {
+	
+	width: 35px;
+	color: #2D2C2C;
+	font-weight: normal;
+	text-align: center;
+	line-height: 23px;
+	/*margin-right: 10px;*/
+	background: #A5A5A5;
+	margin-left: 10px;
+	margin-top: 5px;
+
+}
+
+.btnDate {
+	float:left;
+	margin-right: 15px;
+	margin-top: 13px;
+	line-height: 25px;
+	text-align: center;
+	font-weight: bold;
+	color: gray;	
+}
+
+.voteDiv {
+	
+	vertical-align: middle;
+	font-size: 15px;
+	text-align: center;
+	
+}
+
+#voteIcon {
+	vertical-align: middle;
+	margin-left: 10px;
+	padding-bottom: 12px;
+}
+
+#courseList {
+	width: 100%;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	list-style: none;
+	
+}
+
+#courseList {
+	width: 100%;
+}
+
+#courseList li {
+	width: 100%;
+	padding:0 10px;
+	border-bottom:1px solid #A5A5A5;
+	display: block;
+	height:40px;
+	line-height:40px;
+}
+
+#courseList li:active {
+	background-color: white;
+}
+
+#courseHeader {
+	font-size: 16px;
+	text-decoration: underline;
+	margin-left: 0px;
+}
+

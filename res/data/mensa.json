@@ -1,0 +1,87 @@
+﻿callBackMensa([
+{
+	"mensaID": "1",
+	"label": "Mensa Gummersbach",
+	"adress": "Steinmüllerallee 1, 51643 Gummersbach",
+	"openTime": "<div class='openingHours'>Mittagessen Mo–Fr 11:30–14:00 Uhr <br><br><div class='specialInfo'> im Semester </div><br>Mo–Fr 7:30–15:10 Uhr <br> Mittagessen 11:30–14:00 Uhr <br><br> <div class='specialInfo'> in der vorlesungsfreien Zeit</div> <br> Mo–Fr 7:30–15:10 Uhr <br> Mittagessen 11:30–13:30 Uhr</div>",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=25",
+	"lat": "51.022832",
+	"lon": "7.562295",
+	"email": "proell@kstw.de",
+	"externalID": "25"
+	
+},
+{
+	"mensaID": "2",
+	"label": "Mensa IWZ Deutz",
+	"adress": "Betzdorfer Straße 2, 50679 Köln",
+	"openTime": "<div class='openingHours'>Mo–Fr 11:30–14:30 Uhr<br><br><div class='specialInfo'> im Semester</div><br> Mo–Fr 11:30–14:30 Uhr <br> Mo–Do 11:30–17 Uhr Friet Univers <br> Fr 11:30–14:00 Uhr  Friet Univers <br><br><div class='specialInfo'>  in der vorlesungsfreien Zeit </div><br> Mo–Fr 11:30–14:15 Uhr</div>",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=20",
+	"lat": "50.933916",
+	"lon": "6.988496",
+	"email": "reinle@kstw.de",
+	"externalID": "20"
+	
+},
+
+{
+	"mensaID": "3",
+	"label": "Mensa Südstadt",
+	"adress": "Mainzer Straße 5, 50678 Köln",
+	"openTime": "<div class='openingHours'>Mo–Do 11:30–14:30 Uhr <br> Fr 11:30–14:15 Uhr <br><br><div class='specialInfo'> im Semester </div><br>Mo–Do 7:30–17:30 Uhr <br>Fr 7:30–15:00 Uhr<br> Mittagessen<br> Mo–Do 11:30–14:30 Uhr <br>Fr 11:30–14:15 Uhr <br><br><div class='specialInfo'> in der vorlesungsfreien Zeit</div> <br> Mo–Fr 7:30–15 Uhr</div>",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=21",
+	"lat": "50.920978",
+	"lon": "6.964146",
+	"email": "willim@kstw.de",
+	"externalID": "21"
+	
+},
+{
+	"mensaID": "4",
+	"label": "Mensa Sporthochschule",
+	"adress": "Am Sportpark Müngersdorf 2, 50933 Köln",
+	"openTime": "<div class='openingHours'>Mo–Do 11:15–14:30 Uhr <br>Fr 11:15–14:15 Uhr <br><br><div class='specialInfo'> im Semester </div><br>Mo–Do 11:15–14:30 Uhr <br>Fr 11:15–14:15 Uhr <br><br><div class='specialInfo'> in der vorlesungsfreien Zeit </div><br> Mo–Do 11:15–14:30 Uhr <br> Fr 11:15–14:15 Uhr</div> ",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=19",
+	"lat": "50.937861",
+	"lon": "6.87087",
+	"email": "wollgarten@kstw.de",
+	"externalID": "19"
+	
+},
+{
+	"mensaID": "5",
+	"label": "Mensa Musikhochschule",
+	"adress": "Dagobertstraße 38, 50668 Köln",
+	"openTime": "<div class='openingHours'>Mo–Do 11:45–14:15 Uhr <br> Fr 11:45–14:15 Uhr <br><br><div class='specialInfo'> im Semester</div><br> Mo–Do 8:30–17:30 Uhr <br> Mittagessen 11:45–14:15 Uhr <br> Fr 8:30–16:30 Uhr <br> Mittagessen 11:45–14:15 Uhr  <br><br><div class='specialInfo'>in der vorlesungsfreien Zeit</div><br> Mo–Fr 8:30–15:30 Uhr <br> Mittagessen 11:45–14:15 Uhr</div>",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=22",
+	"lat": "50.948191",
+	"lon": "6.960845",
+	"email": "janoch@kstw.de",
+	"externalID": "22"
+	
+},
+{
+	"mensaID": "6",
+	"label": "UniMensa",
+	"adress": "Zülpicher Straße 70, 50937 Köln",
+	"openTime": "<div class='openingHours'>Mo–Fr 11:30–21 Uhr <br> Sa 11:30–15 Uhr <br><br><div class='specialInfo'> im Semester</div><br> Mo–Fr 11:30–14:15 Uhr <br> Mo–Fr 11:30–14:30 Uhr MG-Nord <br> Mo–Fr 11:30–21:00 Uhr EG-Nord <br> Sa 11:30–15:00 Uhr MG Nord <br><br><div class='specialInfo'>in der vorlesungsfreien Zeit</div><br> Mo–Fr 11:30–14:15 Uhr EG-Nord<br> Mo–Fr 11:30–14:30 Uhr MG-Nord <br> Mo–Fr 11:30–16:00 Uhr EG-Süd</div>",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=10",
+	"lat": "50.927844",
+	"lon": "6.932888",
+	"email": "beunings@kstw.de",
+	"externalID": "10"
+	
+},
+{
+	"mensaID": "7",
+	"label": "Mensa Robert-Koch-Straße",
+	"adress": "Robert-Koch-Straße 10, 50931 Köln",
+	"openTime": "<div class='openingHours'>Mo–Fr 11:15–14:15 Uhr <br><br><div class='specialInfo'> im Semester </div>Mo–Fr 11:15–14:15 Uhr <br><br><div class='specialInfo'>in der vorlesungsfreien Zeit </div><br>Mo–Fr 11:15–14:15 Uhr</div>",
+	"url": "http://kstw.de/KStW/RSS/rssSPP.php?id=2",
+	"lat": "50.927857",
+	"lon": "6.932867",
+	"email": "depre@kstw.de",
+	"externalID": "2"
+	
+}
+])

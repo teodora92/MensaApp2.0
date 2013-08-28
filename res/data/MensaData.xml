@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <mensa>
+    	<id>1</id>
+    	<label>Mensa Gummersbach</label>
+    	<adress1>In den neuen Gebäuden der FH</adress1>
+    	<adress2>Steinmüllerallee 1, 51643 Gummersbach</adress2>
+    	<mealtext>Vier Tellergerichte, Frontcooking, Salatbuffet</mealtext>
+    	<opentext>Mittagessen Mo–Fr 11:30–14:00 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Fr 7:30–15:10 Uhr
+Mittagessen 11:30–14:00 Uhr
+
+in der vorlesungsfreien Zeit
+Mo–Fr 7:30–15:10 Uhr
+Mittagessen 11:30–13:30 Uhr</opentext2>
+       	<parentId>0</parentId>
+    	<extras>Kaffeebar bis 16:30 Uhr</extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=25</url>
+    	<kstw_id>25</kstw_id>
+    	<email>proell@kstw.de</email>
+    	<picture></picture>    	
+    </mensa>
+    <mensa>
+    	<id>2</id>
+    	<label>Mensa IWZ Deutz</label>
+    	<adress1>Im 1. OG des Ingenieurwissenschaftlichen Zentrums</adress1>
+    	<adress2>Betzdorfer Straße 2, 50679 Köln</adress2>
+    	<mealtext>Drei Tellergerichte, Gericht vom Grill, Salatbar</mealtext>
+    	<opentext>Mo–Fr 11:30–14:30 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Fr 11:30–14:30 Uhr
+Mo–Do 11:30–17 Uhr Friet Univers
+Fr 11:30–14:00 Uhr  Friet Univers 
+
+in der vorlesungsfreien Zeit
+Mo–Fr 11:30–14:15 Uhr</opentext2>
+       	<parentId>0</parentId>
+    	<extras>Cafeteria Mo–Do 7:30–18:30 Uhr, Fr 7:30–15 Uhr</extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=20</url>
+    	<kstw_id>20</kstw_id>
+    	<email>reinle@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>3</id>
+    	<label>Mensa Südstadt</label>
+    	<adress1>Im Geisteswissenschaftlichen Zentrum</adress1>
+    	<adress2>Mainzer Straße 5, 50678 Köln</adress2>
+    	<mealtext>Drei Tellergerichte, Salatbuffet, Frontcooking-Station</mealtext>
+    	<opentext>Mo–Do 11:30–14:30 Uhr, Fr 11:30–14:15 Uhr</opentext>
+		<opentext2>im Semester
+Mo–Do 7:30–17:30 Uhr
+Fr 7:30–15:00 Uhr 
+
+Mittagessen
+Mo–Do 11:30–14:30 Uhr
+Fr 11:30–14:15 Uhr
+
+in der vorlesungsfreien Zeit
+Mo–Fr 7:30–15 Uhr</opentext2>
+       	<parentId>0</parentId>
+    	<extras>Cafeteria Mo–Do 7:30–17:30 Uhr, Fr 7:30–15 Uh</extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=21</url>
+    	<kstw_id>21</kstw_id>
+    	<email>willim@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>4</id>
+    	<label>Mensa Sporthochschule</label>
+    	<adress1>Im Hauptgebäude der Deutschen Sporthochschule</adress1>
+    	<adress2>Am Sportpark Müngersdorf 2, 50933 Köln</adress2>
+    	<mealtext>Drei verschriedene Tellergerichte, ein Pastagericht, Gericht aus dem Wok oder vom Grill, großes Salatbuffet, wechselnde Eintöpfe</mealtext>
+    	<opentext>Mo–Do 11:15–14:30 Uhr, Fr 11:15–14:15 Uhr</opentext>
+		<opentext2>im Semester
+Mo–Do 11:15–14:30 Uhr
+Fr 11:15–14:15 Uhr 
+
+in der vorlesungsfreien Zeit
+Mo–Do 11:15–14:30 Uhr
+Fr 11:15–14:15 Uhr </opentext2>
+       	<parentId>0</parentId>
+    	<extras>Café Auszeit Mo–Do 7:30–18:30 Uhr, Fr 7:30–15 Uhr </extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=19</url>
+    	<kstw_id>19</kstw_id>
+    	<email>wollgarten@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+        <mensa>
+    	<id>5</id>
+    	<label>Mensa Musikhochschule</label>
+    	<adress1>Im ersten Stock der Hochschule für Musik und Tanz</adress1>
+    	<adress2>Dagobertstraße 38, 50668 Köln</adress2>
+    	<mealtext>zwei Tellergerichte, eines davon vegetarisch, Salatbuffet</mealtext>
+    	<opentext>Mo–Do 11:45–14:15 Uhr, Fr 11:45–14:15 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Do 8:30–17:30 Uhr, 
+Mittagessen 11:45–14:15 Uhr
+Fr 8:30–16:30 Uhr, 
+Mittagessen 11:45–14:15 Uhr 
+
+in der vorlesungsfreien Zeit
+Mo–Fr 8:30–15:30 Uhr, 
+Mittagessen 11:45–14:15 Uhr</opentext2>
+       	<parentId>0</parentId>
+    	<extras>Kaffeebar bis 14:15 Uhr</extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=22</url>
+    	<kstw_id>22</kstw_id>
+    	<email>janoch@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>6</id>
+    	<label>UniMensa</label>
+    	<adress1>An der Uni-Wiese hinter dem Uni-Hauptgebäude</adress1>
+    	<adress2>Zülpicher Straße 70, 50937 Köln</adress2>
+    	<mealtext>15 verschiedenen Speisenangebote, Salat- und Gemüsebuffets, Frontcooking und Freeflow</mealtext>
+    	<opentext>Mo–Fr 11:30–21 Uhr, Sa 11:30–15 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Fr 11:30–14:15 Uhr
+Mo–Fr 11:30–14:30 Uhr MG-Nord 
+Mo–Fr 11:30–21:00 Uhr EG-Nord
+Sa 11:30–15:00 Uhr MG Nord
+
+in der vorlesungsfreien Zeit
+Mo–Fr 11:30–14:15 Uhr EG-Nord
+Mo–Fr 11:30–14:30 Uhr MG-Nord
+Mo–Fr 11:30–16:00 Uhr EG-Süd</opentext2>
+       	<parentId>0</parentId>
+    	<extras>Campuslounge, Kaffeebar uvm.</extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=10</url>
+    	<kstw_id>10</kstw_id>
+    	<email>beunings@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>7</id>
+    	<label>Mensa Robert-Koch-Straße</label>
+    	<adress1>Gegenüber der Frauenklinik bzw. neben der Zahnklinik</adress1>
+    	<adress2>Robert-Koch-Straße 10, 50931 Köln</adress2>
+    	<mealtext>3 bis 4 Tellergerichte, Salatbuffet</mealtext>
+    	<opentext>Mo–Fr 11:15–14:15 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Fr 11:15–14:15 Uhr
+
+in der vorlesungsfreien Zeit
+Mo–Fr 11:15–14:15 Uhr</opentext2>
+       	<parentId>0</parentId>
+    	<extras></extras>
+    	<url>http://kstw.de/KStW/RSS/rssSPP.php?id=2</url>
+    	<kstw_id>2</kstw_id>
+    	<email>depre@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>8</id>
+    	<label>Kaffeebar Gummersbach</label>
+    	<adress1>Auf Ebene 1 im Hauptgebäude</adress1>
+    	<adress2>Steinmüllerallee 1, 1643 Gummersbach</adress2>
+    	<mealtext>Kaffeespezialitäten, kalte Getränke, belegte Brötchen, Kuchen, Süßwaren</mealtext>
+    	<opentext>Mo–Fr 9:00–16:30 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Fr 9:00–16:30 Uhr</opentext2>
+       	<parentId>1</parentId>
+    	<extras></extras>
+    	<url></url>
+    	<kstw_id></kstw_id>
+    	<email>proell@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>9</id>
+    	<label>Cafeteria IWZ Deutz</label>
+    	<adress1>Im Erdgeschoss des Ingenieurwissenschaftlichen Zentrums</adress1>
+    	<adress2>Betzdorfer Straße 2, 50679 Köln</adress2>
+    	<mealtext>Übliches Cafeteriensortiment, Obstschalen</mealtext>
+    	<opentext>Mo–Do 7:30–18:30 Uhr, Fr 7:30–15:00 Uhr</opentext>
+    	<opentext2>im Semester
+Mo–Do 7:30–18:30 Uhr
+Fr 7:30–15:00 Uhr</opentext2>
+       	<parentId>2</parentId>
+    	<extras></extras>
+    	<url></url>
+    	<kstw_id></kstw_id>
+    	<email>reinle@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>10</id>
+    	<label>Cafeteria Südstadt</label>
+    	<adress1>Im Geisteswissenschaftlichen Zentrum</adress1>
+    	<adress2>Betzdorfer Straße 2, 50679 Köln</adress2>
+    	<mealtext>Heiße und kalte Getränken, belegte Brötchen, Kuchen und Süßigkeiten.</mealtext>
+    	<opentext>Mo–Do 7:30–17:30 Uhr, Fr 7:30–15:00 Uhr</opentext>
+    	<opentext2>im Semester
+Mo – Do 7:30–17:30 Uhr
+Fr 7:30–15 Uhr 
+
+in der vorlesungsfreien Zeit
+Mo – Fr 7:30–15 Uhr</opentext2>
+       	<parentId>3</parentId>
+    	<extras></extras>
+    	<url></url>
+    	<kstw_id></kstw_id>
+    	<email>willim@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>11</id>
+    	<label>Café Auszeit</label>
+    	<adress1>Im Hauptgebäude der Deutschen Sporthochschule</adress1>
+    	<adress2>Am Sportpark Müngersdorf 2, 50931 Köln</adress2>
+    	<mealtext>Zwei Tellergerichte, belegte Brötchen und Kuchen</mealtext>
+    	<opentext>Mo – Do 7:30–18:30 Uhr, Fr 7:30–15 Uhr </opentext>
+    	<opentext2>im Semester
+Mo – Do 7:30–18:30 Uhr
+Fr 7:30–15 Uhr 
+
+warme Gerichte nur im Semester
+Mo – Do 14:30–18:30 Uhr
+
+in der vorlesungsfreien Zeit
+Mo – Do 7:30–15 Uhr
+Fr 7:30–15 Uhr</opentext2>
+       	<parentId>4</parentId>
+    	<extras></extras>
+    	<url></url>
+    	<kstw_id></kstw_id>
+    	<email>wollgarten@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>12</id>
+    	<label>Kaffeebar Musikhochschule</label>
+    	<adress1>Im Foyer der Musikhochschule</adress1>
+    	<adress2>Dagobertstraße 38, 50668 Köln</adress2>
+    	<mealtext>Kaffeespezialitäten, belegte Brötchen, Baguettes, Kuchen, Eis und kalte Getränke</mealtext>
+    	<opentext>Mo – Fr 11:15–14:15 Uhr</opentext>
+    	<opentext2>im Semester
+Mo – Fr 11:15–14:15 Uhr
+
+in der vorlesungsfreien Zeit
+Mo – Fr 11:15–14:15 Uhr</opentext2>
+       	<parentId>5</parentId>
+    	<extras></extras>
+    	<url></url>
+    	<kstw_id></kstw_id>
+    	<email>janoch@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+    <mensa>
+    	<id>13</id>
+    	<label>Kaffeebar UniMensa</label>
+    	<adress1>Kaffeebar im MG-Foyer</adress1>
+    	<adress2>Zülpicher Straße 70, 50937 Köln</adress2>
+    	<mealtext>Kaffeespezialitäten, belegte Brötchen und Baguettes, Kuchen, frische Waffeln mit heißen Kirschen und Sahne</mealtext>
+    	<opentext>Mo – Fr 9–15:30 Uhr, Sa 11:30–15:30 Uhr</opentext>
+    	<opentext2>im Semester
+Mo – Fr 9–15:30 Uhr
+Sa 11:30–15:30 Uhr 
+
+in der vorlesungsfreien Zeit
+Mo – Fr 9–15 Uhr</opentext2>
+       	<parentId>6</parentId>
+    	<extras></extras>
+    	<url></url>
+    	<kstw_id></kstw_id>
+    	<email>Beunings@kstw.de</email>
+    	<picture></picture>
+    </mensa>
+</list>

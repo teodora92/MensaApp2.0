@@ -1,0 +1,74 @@
+
+		.Bereich {background: #F0F0F0; border-bottom: 1px solid #000; margin-bottom: 10px;}
+		.Mensen {background: #F0F0F0; border-bottom: 1px solid #000; margin-bottom: 10px;}
+		
+.Ausgabe {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+	color: white;
+	
+	background: #0F3764;
+	background-repeat: repeat-x;
+	background-position: top left;
+	background-color: #0F3764; 
+	
+	padding: 0.2em;
+    font-weight: bold;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	
+}
+
+.Ausgabe a {
+	text-decoration: none;
+	color: #0B2F56;
+	font-weight: bold;
+	font-size:12px;
+	vertical-align:top;
+	
+}
+
+.Menu {
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+	padding-left: 10px;
+}
+
+.Legende {
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+.zusatzDiv {
+	font-size: 14px;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #0F3764;
+}
+.zusatz {
+	font-weight: normal;
+	color: black;
+}
+
+.Bereich input {margin: 0.5em;}
+.Mensen input {margin: 0.5em;}
+b {color: #003399;}
+#logo {width: 3%; height: 3%; vertical-align: middle; margin-right: 0.25em;}
+#Send {padding: 0.3em 2em 0.3em 2em;}
+
+/*
+	Here we start with info page design
+*/
+.specialInfo {
+	font-weight: bold;
+	color: #0F3764;
+}
+
+.openingHours {
+	padding-left: 10px;
+}
