@@ -90,13 +90,13 @@ function proxyPost(mensaID, day) {
 			if(day == "heute") {
 				$('#detailContent').append(data.data);
 				$('#detailContent').append('<div class="zusatzDiv">Legende evtl. vorhandener Zusatzstoffe:<div class="zusatz">	1 = mit Farbstoff </div><div class="zusatz">    2 = mit Konservierungsstoff</div><div class="zusatz">    3 = mit Antioxidationsmittel</div><div class="zusatz">    4 = mit Geschmacksverstärker</div><div class="zusatz">    5 = geschwefelt</div><div class="zusatz">    6 = geschwärzt</div><div class="zusatz">    7 = gewachst</div><div class="zusatz">    8 = mit Phosphat</div><div class="zusatz">    9 = mit Süßstoff</div><div class="zusatz">    10 = enthält eine Phenylalaninquelle</div></div>');
-		
+				detailScroll.refresh();
 				//var detailScroll = 
 			}
 			else {
 				$('#secondDetailContent').append(data.data);
 				$('#secondDetailContent').append('<div class="zusatzDiv">Legende evtl. vorhandener Zusatzstoffe:<div class="zusatz">	1 = mit Farbstoff </div><div class="zusatz">    2 = mit Konservierungsstoff</div><div class="zusatz">    3 = mit Antioxidationsmittel</div><div class="zusatz">    4 = mit Geschmacksverstärker</div><div class="zusatz">    5 = geschwefelt</div><div class="zusatz">    6 = geschwärzt</div><div class="zusatz">    7 = gewachst</div><div class="zusatz">    8 = mit Phosphat</div><div class="zusatz">    9 = mit Süßstoff</div><div class="zusatz">    10 = enthält eine Phenylalaninquelle</div></div>');
-		
+				secondDetailScroll.refresh();
 			}
 			
 		},
