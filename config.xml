@@ -11,5 +11,51 @@
         Teodora Petrisor, Damian Gawenda
     </author>
     <preference name="permissions" value="none" />
+	<preference name="phonegap-version" value="2.9.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="android-installLocation" value="auto" />
+	
+	<!--Splashscreen support from PGB-->
+	
+	<!-- Android -->
+	<gap:splash src="res/img/splash/android/ldpi/splash.png" gap:platform="android" gap:density="ldpi"  width="320" height="426" />
+	<gap:splash src="res/img/splash/android/mdpi/splash.png" gap:platform="android" gap:density="mdpi"  width="320" height="470" />
+	<gap:splash src="res/img/splash/android/hdpi/splash.png" gap:platform="android" gap:density="hdpi"  width="480" height="640" />
+	<gap:splash src="res/img/splash/android/xhdpi/splash.png" gap:platform="android" gap:density="xhdpi" width="720" height="960" />
+	
+	
+	<!-- iOS -->
+	
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage320x480.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage640x960.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage640x1136.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage1024x748.png" gap:platform="ios" width="1024" height="748" />
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage769x1004.png" gap:platform="ios" width="768" height="1004" />
+
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage2048x1496.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="res/img/splash/apple/appletouchstartupimage1536x2008.png" gap:platform="ios" width="1536" height="2008" />
+		
+	<!--Icon support from PGB-->
+	
+	<icon src="res/img/icons/icon.png" />
+
+	
+	<icon src="res/img/icons/android/ldpi/icLauncher.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="res/img/icons/android/mdpi/icLauncher.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="res/img/icons/android/hdpi/icLauncher.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="res/img/icons/android/xhdpi/icLauncher.png" gap:platform="android" gap:density="xhdpi" />
+	
+	<icon src="res/img/icons/apple/appletouchiconiphone.png" gap:platform="ios" width="57" height="57" />
+	<icon src="res/img/icons/apple/appletouchiconipad.png" gap:platform="ios" width="72" height="72" />
+	<icon src="res/img/icons/apple/appletouchiconiphone4.png" gap:platform="ios" width="114" height="114" />
+
+	<!-- retina iPad support: PhoneGap 2.5.0+ only -->
+	<icon src="res/img/icons/apple/appletouchiconipad3.png" gap:platform="ios" width="144" height="144" />
+	
+	<!-- icon support for blackberry -->
+	<icon src="res/img/icons/blackberry/iconBlackberry.png" gap:platform="blackberry" />
+	
+	
 	
 </widget>
