@@ -208,7 +208,7 @@ function displayMealPlan(mensaID, day) {
 	if(day == "heute") {
 	
 		$('#detailContent').empty();
-
+		$('#detailContent').append('<h1>Menü für heute</h1>');
 		
 		$('#btnNext').remove();
 		
@@ -237,7 +237,8 @@ function displayMealPlan(mensaID, day) {
 	}
 	else {
 		$('#secondDetailContent').empty();
-
+		
+		$('#secondDetailContent').append('<h1>Menü für morgen</h1>');
 		$('#btnNext').remove();
 		
 		//$('#header').append('<span id="btnNext">Heute</span>');
@@ -587,8 +588,8 @@ function bindEvents() {
 	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	
 	document.addEventListener('DOMContentLoaded', function () { 
-		detailScroll = new iScroll('detailScroll', {hScrollbar: false, vScrollbar: false});
-		secondDetailScroll = new iScroll('secondDetailScroll', {hScrollbar: false, vScrollbar: false});
+		detailScroll = new iScroll('detailScroll', {zoom: true, hScrollbar: false, vScrollbar: false});
+		secondDetailScroll = new iScroll('secondDetailScroll', {zoom: true, hScrollbar: false, vScrollbar: false});
 		loadData();
 		bindEvents();
 	}, false);
