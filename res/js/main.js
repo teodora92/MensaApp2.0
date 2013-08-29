@@ -182,11 +182,22 @@ function displayMealPlan(mensaID, day) {
 	
 	
 	currentMensaID = mensaID;
-	
+	var title;
 	window.localStorage.setItem('mensaSelected', 'true');
 	window.localStorage.setItem('mensaID', currentMensaID);
 		
-	
+	var index;
+	for (index = 0; index < mensaArray.length; index++) {
+		if(currentMensaID == mensaArray[index].externalID) {
+			title = mensaArray[index].label;
+			break;
+		}
+	}
+		
+		
+	$('#header').text(title);
+	$('#header').append('<img id="appIcon" src="res/img/ic_launcher48.png">');
+		
 	//document.getElementById('#infoDetailPage').setAttribute('class', 'detailPage');
 	//alert('get here');
 	document.getElementById("infoDetailPage").setAttribute('class', 'detailPage');
@@ -200,15 +211,27 @@ function displayMealPlan(mensaID, day) {
 
 		
 		$('#btnNext').remove();
-		$('#navIcon').remove();
 		
 		
-		$('#header').append('<span id="btnNext">Morgen</span>');
-		$('#header').append('<img id="navIcon" src="res/img/btnRight.png">');
+		
+		//$('#header').append('<span id="btnNext">Morgen</span>');
+		$('#header').after('<img id="btnNext" src="res/img/arrowRight3.png">');
 		
 		$('#btnNext').click(function() {
 			//alert('clicked');
 			displayMealPlan(currentMensaID, "morgen")
+		});
+		
+		$("#btnNext").mousedown(function(){
+			$('#btnNext').attr('src', 'res/img/arrowRightLight.png');
+		});
+		$("#btnNext").mouseup(function(){
+			$('#btnNext').attr('src', 'res/img/arrowRight3.png');
+		});
+		$("#btnNext").bind('touchstart', function(){
+			$('#btnNext').attr('src', 'res/img/arrowRightLight.png');
+		}).bind('touchend', function(){
+			$('#btnNext').attr('src', 'res/img/arrowRight3.png');
 		});
 		
 	}
@@ -216,14 +239,26 @@ function displayMealPlan(mensaID, day) {
 		$('#secondDetailContent').empty();
 
 		$('#btnNext').remove();
-		$('#navIcon').remove();
 		
-		$('#header').append('<span id="btnNext">Heute</span>');
-		$('#header').append('<img id="navIcon" src="res/img/btnLeft.png">');
+		//$('#header').append('<span id="btnNext">Heute</span>');
+		$('#header').after('<img id="btnNext" src="res/img/arrowLeft3.png">');
 		
 		$('#btnNext').click(function() {
 			//alert('clicked');
 			displayMealPlan(currentMensaID, "heute")
+		});
+		
+		$("#btnNext").mousedown(function(){
+			$('#btnNext').attr('src', 'res/img/arrowLeftLight.png');
+		});
+		$("#btnNext").mouseup(function(){
+			$('#btnNext').attr('src', 'res/img/arrowLeft3.png');
+		});
+		
+		$("#btnNext").bind('touchstart', function(){
+			$('#btnNext').attr('src', 'res/img/arrowLeftLight.png');
+		}).bind('touchend', function(){
+			$('#btnNext').attr('src', 'res/img/arrowLeft3.png');
 		});
 	
 	}
@@ -283,16 +318,27 @@ function displayTime() {
 	}
 	
 	$('#btnNext').remove();
-	$('#navIcon').remove();
 		
 		
-	$('#header').append('<span id="btnNext">Heute</span>');
-	$('#header').append('<img id="navIcon" src="res/img/btnLeft.png">');
+	//$('#header').append('<span id="btnNext">Heute</span>');
+	$('#header').after('<img id="btnNext" src="res/img/arrowLeft3.png">');
 		
 	$('#btnNext').click(function() {
 		
 		displayMealPlan(currentMensaID, "heute")
 	});
+	$("#btnNext").mousedown(function(){
+		$('#btnNext').attr('src', 'res/img/arrowLeftLight.png');
+	});
+	$("#btnNext").mouseup(function(){
+		$('#btnNext').attr('src', 'res/img/arrowLeft3.png');
+	});
+	
+	$("#btnNext").bind('touchstart', function(){
+        $('#btnNext').attr('src', 'res/img/arrowLeftLight.png');
+    }).bind('touchend', function(){
+        $('#btnNext').attr('src', 'res/img/arrowLeft3.png');
+    });
 	
 	$('#thirdDetailContent').append('<h2 style="text-decoration: underline">Öffnungszeiten</h2>');
 	$('#thirdDetailContent').append(mensa.openTime);
@@ -317,16 +363,27 @@ function renderMap() {
 	}
 	
 	$('#btnNext').remove();
-	$('#navIcon').remove();
 		
 		
-	$('#header').append('<span id="btnNext">Heute</span>');
-	$('#header').append('<img id="navIcon" src="res/img/btnLeft.png">');
+	//$('#header').append('<span id="btnNext">Heute</span>');
+	$('#header').after('<img id="btnNext" src="res/img/arrowLeft3.png">');
 		
 	$('#btnNext').click(function() {
 		
 		displayMealPlan(currentMensaID, "heute")
 	});
+	$("#btnNext").mousedown(function(){
+			$('#btnNext').attr('src', 'res/img/arrowLeftLight.png');
+	});
+	$("#btnNext").mouseup(function(){
+		$('#btnNext').attr('src', 'res/img/arrowLeft3.png');
+	});
+	
+	$("#btnNext").bind('touchstart', function(){
+        $('#btnNext').attr('src', 'res/img/arrowLeftLight.png');
+    }).bind('touchend', function(){
+        $('#btnNext').attr('src', 'res/img/arrowLeft3.png');
+    });
 	
 	
 	var mapProp;
@@ -422,9 +479,54 @@ function displaySelectMenu() {
 
 function bindEvents() {
 
+	$("#btnMensaList").mousedown(function(){
+		$('#btnMensaList img').attr('src', 'res/img/gearIconLight.png');
+	});
+	$("#btnMensaList").mouseup(function(){
+		$('#btnMensaList img').attr('src', 'res/img/gearIcon4.png');
+	});
+	
+	$("#btnMensaList").bind('touchstart', function(){
+        $('#btnMensaList img').attr('src', 'res/img/gearIconLight.png');
+    }).bind('touchend', function(){
+        $('#btnMensaList img').attr('src', 'res/img/gearIcon4.png');
+    });
+
+	$("#btnOpenTime").mousedown(function(){
+		$('#btnOpenTime img').attr('src', 'res/img/clockIconLight.png');
+	});
+	$("#btnOpenTime").mouseup(function(){
+		$('#btnOpenTime img').attr('src', 'res/img/clockIcon8.png');
+	});
+	
+	$("#btnOpenTime").bind('touchstart', function(){
+        $('#btnOpenTime img').attr('src', 'res/img/clockIconLight.png');
+    }).bind('touchend', function(){
+		$('#btnOpenTime img').attr('src', 'res/img/clockIcon8.png');
+    });
+	
+	$("#btnMap").mousedown(function(){
+		$('#btnMap img').attr('src', 'res/img/mapIconLight.png');
+	});
+	$("#btnMap").mouseup(function(){
+		$('#btnMap img').attr('src', 'res/img/mapIcon4.png');
+	});
+	
+	
+	$("#btnMap").bind('touchstart', function(){
+		$('#btnMap img').attr('src', 'res/img/mapIconLight.png');
+    }).bind('touchend', function(){
+		$('#btnMap img').attr('src', 'res/img/mapIcon4.png');
+    });
+	
+	
+	
 	$('#btnMensaList').click(function() {
 		$('#btnNext').remove();
-		$('#navIcon').remove();
+		$('#header').text('MensaApp');
+		$('#header').append('<img id="appIcon" src="res/img/ic_launcher48.png">');
+		window.localStorage.setItem('mensaSelected', null);
+	
 		document.getElementById("secondDetailPage").setAttribute('class', 'detailPage');
 		document.getElementById("detailPage").setAttribute('class', 'detailPage');
 		document.getElementById("infoDetailPage").setAttribute('class', 'detailPage');

@@ -15,6 +15,21 @@
 }
 
 #btnNext {
+	
+	
+}
+
+#btnNext{
+	right: 20px;
+	height: 35px;
+	position: absolute;
+	top: 7px;
+	z-index: 5;
+	
+}
+
+
+#navIcon {
 	position: absolute;
 	right: 85px;
 	font-size: 18px;
@@ -22,17 +37,6 @@
 	height: 25px;
 	line-height: 25px;
 	z-index: 4;
-	
-}
-
-
-
-
-#navIcon {
-	right: 65px;
-	height: 35px;
-	position: absolute;
-	top: 7px;
 }
 
 *	 {
@@ -98,6 +102,21 @@
 	-moz-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
+	
+	background-image: linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.51, rgb(15,55,100)),
+		color-stop(0.64, rgb(21,67,117)),
+		color-stop(1, rgb(62,119,179))
+	);
 }
 
 .footerInv {
@@ -116,6 +135,21 @@
 	-moz-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
+	
+	background-image: linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(15,55,100) 51%, rgb(21,67,117) 64%, rgb(62,119,179) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.51, rgb(15,55,100)),
+		color-stop(0.64, rgb(21,67,117)),
+		color-stop(1, rgb(62,119,179))
+	);
 }
 
 
@@ -192,15 +226,11 @@ h2 {
 	text-align: center;
 }
 
-#btnMensaList img, #btnMap img {
-	height: 45px;
-	
+#btnMensaList img, #btnMap img, #btnOpenTime img {
+	height: 45px;	
 }
 
-#btnOpenTime img {
-	height: 42px;
-	padding-top: 2px;
-}
+
 
 
 
