@@ -36,7 +36,15 @@ function loadData() {
 			}
 		},
 		error: function(xhr, textStatus, thrownError) {
-			alert(thrownError);
+			//alert(thrownError);
+			if(textStatus == "timeout") {
+				if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {	
+					navigator.notification.alert('Verbinden Sie sich mit dem Internet um alle aktuellen Meldungen sehen zu können.');
+				}
+				else {
+					alert('Verbinden Sie sich mit dem Internet um alle aktuellen Meldungen sehen zu können.');
+				}
+			}
 		},
 		jsonpCallback: 'callBackMensa'
 		
