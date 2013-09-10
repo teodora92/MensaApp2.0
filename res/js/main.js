@@ -480,12 +480,12 @@ function displaySelectMenu() {
 	
 	$('.listItem').click(function() {
 		//alert(this.id);
-		if(currentPage != "main") {
+		/*if(currentPage != "main") {
 			return;
 		}
 		else {
 			currentPage = "detail";
-		}
+		}*/
 		var mensaID = $('#' + this.id).data('externalID');
 		//alert(mensaID);
 		
@@ -543,7 +543,7 @@ function bindEvents() {
 	
 	
 	$('#btnMensaList').click(function() {
-		currentPage = "main";
+		//currentPage = "main";
 		$('#btnNext').remove();
 		$('#header').text('MensaApp');
 		$('#header').append('<img id="appIcon" src="res/img/ic_launcher48.png">');
