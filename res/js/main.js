@@ -39,10 +39,10 @@ function loadData() {
 			//alert(thrownError);
 			if(textStatus == "timeout") {
 				if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {	
-					navigator.notification.alert('Verbinden Sie sich mit dem Internet um alle aktuellen Meldungen sehen zu können.');
+					navigator.notification.alert('Verbinden Sie sich mit dem Internet um alle aktuellen Speisepläne sehen zu können.');
 				}
 				else {
-					alert('Verbinden Sie sich mit dem Internet um alle aktuellen Meldungen sehen zu können.');
+					alert('Verbinden Sie sich mit dem Internet um alle aktuellen Speisepläne sehen zu können.');
 				}
 			}
 		},
@@ -84,7 +84,7 @@ function proxyPost(mensaID, day) {
 	url = String(url);
 	
 	function callback() {
-		alert('works?');
+		--alert('works?');
 	}
 
 	$.ajax({
@@ -109,7 +109,13 @@ function proxyPost(mensaID, day) {
 			
 		},
 		error: function(xhr, textStatus, thrownError) {
-			alert(thrownError);
+			if(thrownError == "Error: callback was not called") {
+				//alert('hello');
+			}
+			else {
+				alert(thrownError);
+			}
+			
 		},
 		jsonpCallback: 'callback'
 		
@@ -474,6 +480,12 @@ function displaySelectMenu() {
 	
 	$('.listItem').click(function() {
 		//alert(this.id);
+		if(currentPage != "main") {
+			return;
+		}
+		else {
+			currentPage = "detail";
+		}
 		var mensaID = $('#' + this.id).data('externalID');
 		//alert(mensaID);
 		
@@ -531,6 +543,7 @@ function bindEvents() {
 	
 	
 	$('#btnMensaList').click(function() {
+		currentPage = "main";
 		$('#btnNext').remove();
 		$('#header').text('MensaApp');
 		$('#header').append('<img id="appIcon" src="res/img/ic_launcher48.png">');
@@ -575,11 +588,11 @@ function bindEvents() {
 			}
 
 			document.addEventListener("backButton", function() {
-				alert('back button pressed');
+				//alert('back button pressed');
 				//goLeft();
 			}, false);
 			document.addEventListener("menubutton", function() {
-				alert("menu button pressed");
+				//alert("menu button pressed");
 			}, false);
 			
 	}, false);
