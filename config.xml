@@ -16,8 +16,10 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="android-installLocation" value="auto" />
 	
+	
 	<!--Splashscreen support from PGB-->
 	<preference name="show-splash-screen-spinner" value="false" />
+	<preference name="splash-screen-duration" value="1500" />
 	
 	<!-- Android -->
 	<gap:splash src="res/img/splash/android/ldpi/splash.png" gap:platform="android" gap:density="ldpi"  width="320" height="426" />
