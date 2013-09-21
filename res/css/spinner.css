@@ -1,7 +1,7 @@
 #floatingCirclesG{
 position:absolute;
 display: inline;
-z-index: 5;
+z-index: 7;
 left: 50%;
 top: 50%;
 width:128px;

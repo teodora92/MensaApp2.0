@@ -107,6 +107,7 @@ function proxyPost(mensaID, day) {
 				$('#secondDetailContent').append('<div class="zusatzDiv">Legende evtl. vorhandener Zusatzstoffe:<div class="zusatz">	1 = mit Farbstoff </div><div class="zusatz">    2 = mit Konservierungsstoff</div><div class="zusatz">    3 = mit Antioxidationsmittel</div><div class="zusatz">    4 = mit Geschmacksverstärker</div><div class="zusatz">    5 = geschwefelt</div><div class="zusatz">    6 = geschwärzt</div><div class="zusatz">    7 = gewachst</div><div class="zusatz">    8 = mit Phosphat</div><div class="zusatz">    9 = mit Süßstoff</div><div class="zusatz">    10 = enthält eine Phenylalaninquelle</div></div>');
 				secondDetailScroll.refresh();
 			}
+			document.getElementById('floatingCirclesG').style.display = 'none' ;
 			
 		},
 		error: function(xhr, textStatus, thrownError) {
@@ -114,11 +115,21 @@ function proxyPost(mensaID, day) {
 				//alert('hello');
 			}
 			else {
-				alert(thrownError);
+				//alert(thrownError);
 			}
+			if(textStatus == "timeout") {
+				if(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {	
+					navigator.notification.alert('Verbinden Sie sich mit dem Internet um alle aktuellen Speisepläne sehen zu können.');
+				}
+				else {
+					alert('Verbinden Sie sich mit dem Internet um alle aktuellen Speisepläne sehen zu können.');
+				}
+			}
+			document.getElementById('floatingCirclesG').style.display = 'none' ;
 			
 		},
-		jsonpCallback: 'callback'
+		jsonpCallback: 'callback',
+		timeout: 10000
 		
 	});
 
@@ -196,6 +207,7 @@ function crossDomainPost(mensaID, day) {
 function displayMealPlan(mensaID, day) {
 	
 	document.getElementById('floatingCirclesG').style.display = 'inline';
+	
 	currentMensaID = mensaID;
 	var title;
 	window.localStorage.setItem('mensaSelected', 'true');
@@ -293,7 +305,7 @@ function displayMealPlan(mensaID, day) {
 	
 	//crossDomainPost(mensaID, day);
 	proxyPost(mensaID, day);
-	document.getElementById('floatingCirclesG').style.display = 'none' ;
+	
 	document.getElementById("footer").setAttribute('class', 'footerVis');
 	if(day == "heute") {
 		
