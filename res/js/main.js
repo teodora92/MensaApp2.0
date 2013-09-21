@@ -336,7 +336,8 @@ function displayMealPlan(mensaID, day) {
 }
 
 function displayTime() {
-
+	currentPage = 'time';
+	document.getElementById('floatingCirclesG').style.display = 'none';
 	$('#infoDetailPage').empty();
 	$('#infoDetailPage').append('<div id="thirdDetailScroll"></div>');
 	$('#thirdDetailScroll').append('<div id="thirdDetailContent"></div>');
@@ -388,6 +389,8 @@ function displayTime() {
 }
 
 function renderMap() {
+	currentPage = 'map';
+	document.getElementById('floatingCirclesG').style.display = 'none';
 	$('#thirdDetailContent').empty();
 	
 	// add current time
@@ -674,7 +677,9 @@ function bindEvents() {
 			}
 			else if (direction =="right") {
 				//alert('go to today');
-				$('#btnNext').click();
+				if(currentPage != 'map') {
+					$('#btnNext').click();
+				}
 			}
 		}
 	});
