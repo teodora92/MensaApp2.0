@@ -222,7 +222,12 @@ function displayMealPlan(mensaID, day) {
 	if(day == "heute") {
 	
 		$('#detailContent').empty();
-		$('#detailContent').append('<h1>Menü für heute</h1>');
+		
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = monthArray[today.getMonth()];
+
+		$('#detailContent').append('<h1>Menü für heute, '+dd+'. '+mm+'</h1>');
 		
 		$('#btnNext').remove();
 		
@@ -252,7 +257,12 @@ function displayMealPlan(mensaID, day) {
 	else {
 		$('#secondDetailContent').empty();
 		
-		$('#secondDetailContent').append('<h1>Menü für morgen</h1>');
+		var tomorrow = new Date();
+		tomorrow.setDate(tomorrow.getDate() + 1);
+		var dd = tomorrow.getDate();
+		var mm = monthArray[tomorrow.getMonth()];
+
+		$('#secondDetailContent').append('<h1>Menü für morgen, '+dd+'. '+mm+'</h1>');
 		$('#btnNext').remove();
 		
 		//$('#header').append('<span id="btnNext">Heute</span>');
@@ -573,9 +583,10 @@ function bindEvents() {
 {
 
 	var mensaArray = new Array();
-	
+	var monthArray = ["Januar", "Februar", "März", "April", "May", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
 	var currentMensaID;
 	var mensaScroll;
+	// currentPage can be ['mensaList', 'heute', 'morgen', 'time', 'map']
 	var currentPage;
 	var detailScroll;
 	var secondDetailScroll;
@@ -590,6 +601,16 @@ function bindEvents() {
 			document.addEventListener("backButton", function() {
 				//alert('back button pressed');
 				//goLeft();
+				if(document.getElementById("infoDetailPage").getAttribute('class') == 'detailPageVis') {
+					$('#btnNext').click();
+				}
+				else if(document.getElementById("secondDetailPage").getAttribute('class') == 'detailPageVis') {
+					$('#btnNext').click();
+				}
+				else if(document.getElementById("detailPage").getAttribute('class') == 'detailPageVis') {
+					$('#btnMensaList').click();
+				}
+				
 			}, false);
 			document.addEventListener("menubutton", function() {
 				//alert("menu button pressed");
@@ -599,9 +620,44 @@ function bindEvents() {
 
 	$('#detailPage').swipe({
 		swipe: function(event, direction, distance, duration, fingerCount) {
-			if(direction == "right") {
+			if(direction == "left") {
+				//alert('go to tomorrow');
 				//document.getElementById('detailPage').setAttribute('class', 'detailPage');
 				//goLeft();
+				$('#btnNext').click();
+			}
+			else if (direction =="right") {
+				//alert('go to mensa list page');
+				$('#btnMensaList').click();
+				
+			}
+		}
+	});
+	
+	$('#secondDetailPage').swipe({
+		swipe: function(event, direction, distance, duration, fingerCount) {
+			if(direction == "left") {
+				//alert('do nothing');
+				//document.getElementById('detailPage').setAttribute('class', 'detailPage');
+				//goLeft();
+			}
+			else if (direction =="right") {
+				//alert('go to today');
+				$('#btnNext').click();
+			}
+		}
+	});
+	
+	$('#infoDetailPage').swipe({
+		swipe: function(event, direction, distance, duration, fingerCount) {
+			if(direction == "left") {
+				//alert('do nothing');
+				//document.getElementById('detailPage').setAttribute('class', 'detailPage');
+				//goLeft();
+			}
+			else if (direction =="right") {
+				//alert('go to today');
+				$('#btnNext').click();
 			}
 		}
 	});
@@ -615,6 +671,14 @@ function bindEvents() {
 		bindEvents();
 	}, false);
 
-	
+	document.addEventListener("resume", function() {
+		// resuming mensa app - have to test on actual device
+		//if(document.getElementById("detailPage").getAttribute('class') == 'detailPageVis') {
+		loadData();
+		document.getElementById("secondDetailPage").setAttribute('class', 'detailPage');
+		document.getElementById("infoDetailPage").setAttribute('class', 'detailPage');
+		//}
+		
+	}, false);
 }
 
