@@ -46,7 +46,8 @@ function loadData() {
 				}
 			}
 		},
-		jsonpCallback: 'callBackMensa'
+		jsonpCallback: 'callBackMensa',
+		timeout: 10000
 		
 	});
 }
@@ -194,7 +195,7 @@ function crossDomainPost(mensaID, day) {
 
 function displayMealPlan(mensaID, day) {
 	
-	
+	document.getElementById('floatingCirclesG').style.display = 'inline';
 	currentMensaID = mensaID;
 	var title;
 	window.localStorage.setItem('mensaSelected', 'true');
@@ -292,7 +293,7 @@ function displayMealPlan(mensaID, day) {
 	
 	//crossDomainPost(mensaID, day);
 	proxyPost(mensaID, day);
-	
+	document.getElementById('floatingCirclesG').style.display = 'none' ;
 	document.getElementById("footer").setAttribute('class', 'footerVis');
 	if(day == "heute") {
 		
@@ -459,6 +460,7 @@ function renderMap() {
 
 function displaySelectMenu() {
 
+	document.getElementById('floatingCirclesG').style.display = 'none';
 	$('#wrapper').empty();
 	
 	$('#wrapper').append('<div id="scroller"></div>');
@@ -608,7 +610,10 @@ function bindEvents() {
 					$('#btnNext').click();
 				}
 				else if(document.getElementById("detailPage").getAttribute('class') == 'detailPageVis') {
-					$('#btnMensaList').click();
+					device.exitApp();
+				}
+				else if(document.getElementById("detailPage").getAttribute('class') == 'detailPage') {
+					device.exitApp();
 				}
 				
 			}, false);
