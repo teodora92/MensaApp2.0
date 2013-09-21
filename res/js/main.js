@@ -57,7 +57,7 @@ function parseJSON(data) {
 
 	var i, id, label, adress, openTime, url, lat, lon, email, externalID;
 	var mensa;
-	
+	mensaArray = [];
 	for(i = 0; i < data.length; ++i) {
 		mensaID = data[i].mensaID;
 		label = data[i].label;
