@@ -240,7 +240,7 @@ function displayMealPlan(mensaID, day) {
 		var dd = today.getDate();
 		var mm = monthArray[today.getMonth()];
 
-		$('#detailContent').append('<h1>Menü für heute, '+dd+'. '+mm+'</h1>');
+		$('#detailContent').append('<h1>Menü für heute, den '+dd+'. '+mm+'</h1>');
 		
 		$('#btnNext').remove();
 		
@@ -275,7 +275,7 @@ function displayMealPlan(mensaID, day) {
 		var dd = tomorrow.getDate();
 		var mm = monthArray[tomorrow.getMonth()];
 
-		$('#secondDetailContent').append('<h1>Menü für morgen, '+dd+'. '+mm+'</h1>');
+		$('#secondDetailContent').append('<h1>Menü für morgen, den '+dd+'. '+mm+'</h1>');
 		$('#btnNext').remove();
 		
 		//$('#header').append('<span id="btnNext">Heute</span>');
