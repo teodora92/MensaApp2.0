@@ -462,6 +462,11 @@ function renderMap() {
 		infoWindow.open(marker.getMap(),marker);
 	});
 
+	google.maps.event.addListener(infoWindow,'closeclick',function(){
+		//currentMark.setMap(null); //removes the marker
+		// then, remove the infowindows name from the array
+		alert('should close now');
+	});
 		//markerList.push(marker);
 		
 	
