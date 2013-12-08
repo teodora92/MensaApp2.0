@@ -459,7 +459,7 @@ function renderMap() {
 	});
 	
 	google.maps.event.addListener(marker, 'click', function() {
-		infoWindow.open(market.getMap(),marker);
+		infoWindow.open(marker.getMap(),marker);
 	});
 
 		//markerList.push(marker);
