@@ -16,6 +16,10 @@
 	<preference name="orientation" value="portrait" />
 	<preference name="android-installLocation" value="auto" />
 	
+	<!-- Platforms to install on -->
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	
 	
 	<!--Splashscreen support from PGB-->
 	<preference name="show-splash-screen-spinner" value="false" />
