@@ -455,23 +455,32 @@ function renderMap() {
 	var infoWindow = new google.maps.InfoWindow({
 			content: content,
 			maxWidth: 300,
-			maxHeight: 300
+			maxHeight: 300,
+			width: 300,
+			height: 300
 	});
 	
-	google.maps.event.addListener(marker, 'click', function() {
+	var info = document.getElementById('myinfo');
+	
+	google.maps.event.addListener(marker, 'click', function(event) {
 		infoWindow.open(marker.getMap(),marker);
+		// remove the x button
+		$(".gm-style-iw").next("div").hide();
 	});
 
 	google.maps.event.addListener(infoWindow,'closeclick',function(){
 		//currentMark.setMap(null); //removes the marker
 		// then, remove the infowindows name from the array
-		alert('should close now');
+		//alert('should close now');
 	});
 	google.maps.event.addListener(map,'click',function(){
 		//currentMark.setMap(null); //removes the marker
-		// then, remove the infowindows name from the array
-		alert('Just clicked now');
+		// close infowindow when click on map
+		infoWindow.close();
 	});
+	
+	
+	
 		//markerList.push(marker);
 		
 	
