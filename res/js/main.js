@@ -689,7 +689,7 @@ function bindEvents() {
 		}
 	});
 	
-	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	/*document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);*/
 	
 	document.addEventListener('DOMContentLoaded', function () { 
 		detailScroll = new iScroll('detailScroll', {zoom: true, hScrollbar: false, vScrollbar: false});
